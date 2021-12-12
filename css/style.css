@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.navigation {
+    background: rgb(146, 146, 146);
+    box-sizing: border-box;
+    position: sticky;
+    height: 180px;
+    margin-bottom: -3px;
+}
+nav div a img.logo {
+    width: 400px;
+    height: auto;
+    padding: 8px;
+}
+
+nav div.barranav {
+    box-sizing: border-box;
+    overflow: auto;
+    padding: 2px;
+    margin-top: -80PX;
+    text-align: right;
+}
+
+a:visited {
+    color:black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+nav div.barranav ul li {
+    font-family: 'M PLUS 2', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10PX;
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+nav div.barranav ul li:hover { 
+
+    filter: invert();
+
+}
+main div div.mainImagenes  {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../Img/Fondomain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+main div h2.mainTitle {
+    font-family: 'M PLUS 2', sans-serif;
+    padding: 5px;
+    background: rgb(146, 146, 146);
+    text-align: center;
+
+}
+main div img.mainImg {
+    display: grid;
+    margin: 10px 10px;
+    border: 1px solid white;
+
+}
+main div div img.mainImg{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+img.mainImg:hover{
+    filter: brightness(100%);
+}
+
+.footer {
+    height: 200px;
+    font-family: 'M PLUS 2', sans-serif;
+    background-color: rgb(146, 146, 146);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: left;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+}
+footer div.footerQuienes {
+    width: 350px;
+    height: 150px;
+    display: inline-block ;    
+}
+footer div h2.footerTitle {
+    padding-top: 2px;
+    font-size: 22px;
+    display: inline-block ;
+}
+footer div.footerLogo {
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
+    display: inline-block;
+}
+.footerLogo1 {
+    width: 100%;
+}
+footer div.footerContacto {
+    margin: 15px 15px;
+    width: 250px;
+    height: 150px;
+    display: inline-block ;
+}
+footer div.footerLocation {
+    display: inline-block ;
+}
+iframe {
+    margin: 5px 5px;
+    width: 300px;
+    height: 150px;
+}
+
+.borderContact {
+    margin: 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    
+}
+
+form fieldset.form {
+    background: white;
+    border: 0px ;
+    padding: 0px;
+}
+
+img.imgContact {
+    width: 400px;
+    height: auto;
+}
+
+section div.galeria {
+    display: inline-block;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin: 10px;
+}
+
+section div img.mainImg {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 2px;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.materialesSection {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: rgb(224, 224, 224);
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 980px)  {
+
+/* Header */
+
+.boxLogo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav div a img.logo {
+    width: 400px;
+    height: auto;
+    padding: 4px;
+
+}
+
+nav div.barranav ul {
+display: flex;
+text-align: center;
+justify-content: center;
+}
+
+nav div.barranav ul li {
+    font-family: 'M PLUS 2', sans-serif;
+    display: inline-block;
+    text-align: center;
+    margin-top: 100px;
+    padding: 10PX;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+
+main div h2.mainTitle {
+    font-family: 'M PLUS 2', sans-serif;
+    padding: 5px;
+    background: rgb(146, 146, 146);
+    text-align: center;
+    font-size: 90%;
+
+}
+
+main div div.mainImagenes  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background-image: url(../Img/Fondomain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    position: relative;
+    width: 100%;
+}
+
+footer div.footerLogo {
+    width: 150px;
+    height: 150px;
+    margin: 5px 5px;
+    display: inline-block;
+}
+.footerLogo1 {
+    width: 75%;
+}
+
+footer div h2.footerTitle {
+    font-size: 16px;
+}
+
+footer div.footerContacto {
+    margin: 15px 15px;
+    width: 250px;
+    height: 150px;
+    display: inline-block ;
+    font-size: 14px;
+}
+
+footer div.footerQuienes {
+    width: 350px;
+    height: 150px;
+    display: none ;    
+}
+footer div.footerLocation {
+    display: none ;
+}
+
+.imgContact {
+    display: none;
+}
+
+/* Page Materiales */
+
+.materialesSection {
+    display: flex;
+    flex-direction: column;
+}
+
+}
