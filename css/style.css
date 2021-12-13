@@ -13,7 +13,7 @@ body {
     background: rgb(146, 146, 146);
     box-sizing: border-box;
     position: sticky;
-    height: 180px;
+    height: 160px;
     margin-bottom: -3px;
 }
 nav div a img.logo {
@@ -37,8 +37,12 @@ a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: 1s;
 }
 
+nav div.barranav ul {
+    height: 80px;
+}
 
 nav div.barranav ul li {
     font-family: 'M PLUS 2', sans-serif;
@@ -54,15 +58,20 @@ nav div.barranav ul li {
 nav div.barranav ul li:hover { 
 
     filter: invert();
+    transform: translateY(10px);
+}
 
+main {
+    min-height: calc(100vh - 380px );
+    background-image: url(../Img/Fondomain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 main div div.mainImagenes  {
     display: flex;
     align-items: center;
     justify-items: center;
-    background-image: url(../Img/Fondomain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+
     text-align: center;
 }
 main div h2.mainTitle {
@@ -114,13 +123,17 @@ footer div h2.footerTitle {
     display: inline-block ;
 }
 footer div.footerLogo {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     margin: 5px 5px;
     display: inline-block;
 }
 .footerLogo1 {
     width: 100%;
+    transition: 1s;
+}
+.footerLogo1:hover {
+    transform: rotate(360deg);
 }
 footer div.footerContacto {
     margin: 15px 15px;
@@ -166,6 +179,7 @@ section div.galeria {
     justify-items: center;
     text-align: center;
     margin: 10px;
+    min-height: calc(100vh - 380px );
 }
 
 section div img.mainImg {
@@ -174,9 +188,13 @@ section div img.mainImg {
     width: 400px;
     height: 400px;
     object-fit: cover;
+    transition: 1s;
 
 }
 
+section div img.mainImg:hover{
+    transform: scale(.9);
+}
 .materialesSection {
     padding: 30px;
     display: flex;
