@@ -13,7 +13,7 @@ body {
     background: rgb(146, 146, 146);
     box-sizing: border-box;
     position: sticky;
-    height: 160px;
+    height: 200px;
     margin-bottom: -3px;
 }
 nav div a img.logo {
@@ -61,7 +61,11 @@ nav div.barranav ul li:hover {
     transform: translateY(10px);
 }
 
-main {
+.mainSomos {
+    background: black;
+}
+
+.mainIndex {
     min-height: calc(100vh - 380px );
     background-image: url(../Img/Fondomain.jpg);
     background-repeat: no-repeat;
@@ -208,6 +212,7 @@ h3 {
     font-size: 25px;
 }
 
+
 /* Responsive */
 
 @media screen and (max-width: 980px)  {
@@ -231,6 +236,7 @@ nav div.barranav ul {
 display: flex;
 text-align: center;
 justify-content: center;
+height: 180px;
 }
 
 nav div.barranav ul li {
@@ -249,8 +255,8 @@ main div h2.mainTitle {
     font-family: 'M PLUS 2', sans-serif;
     padding: 5px;
     background: rgb(146, 146, 146);
-    text-align: center;
-    font-size: 90%;
+    font-size: 80%;
+
 
 }
 
@@ -303,15 +309,11 @@ footer div.footerLocation {
     display: none ;
 }
 
+
+
+
 .imgContact {
-    display: none;
-}
-
-/* Page Materiales */
-
-.materialesSection {
     display: flex;
     flex-direction: column;
-}
-
-}
+    align-items: center;
+    justify-items: center;
