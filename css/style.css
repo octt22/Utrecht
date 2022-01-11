@@ -5,6 +5,17 @@
     font-family: 'M PLUS 2', sans-serif;
 }
 
+.wspLogo1 {
+    position: fixed;
+    z-index: 99;
+    bottom: 2%;
+    left: 93%;
+}
+
+.wspLogo {
+    width: 200px;
+}
+
 body {
     height: 100vh;
 }
@@ -17,7 +28,7 @@ body {
     margin-bottom: -3px;
 }
 nav div a img.logo {
-    width: 400px;
+    width: 600px;
     height: auto;
     padding: 8px;
 }
@@ -41,11 +52,12 @@ a{
 }
 
 nav div.barranav ul {
-    height: 80px;
+    height: 100px;
 }
 
 nav div.barranav ul li {
     font-family: 'M PLUS 2', sans-serif;
+    font-size: 25px;
     display: inline-block;
     margin-top: 20px;
     padding: 10PX;
@@ -63,18 +75,49 @@ nav div.barranav ul li:hover {
 
 .mainSomos {
     background: black;
+    min-height: calc(100vh - 400px );
+}
+
+.somos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.somosContainer1 {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.somosTitulo {
+    color: white;
+    font-size: 60px;
+    margin: 80PX 15PX;
+}
+
+.somosDesc {
+    color: white;
+    font-size: 30px;
+}
+
+.somosImg {
+    height:  calc(100vh - 400px );
+    width: auto;
 }
 
 .mainIndex {
-    min-height: calc(100vh - 380px );
-    background-image: url(../Img/Fondomain.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    min-height: calc(100vh - 400px );
+    background-image: url(../Img/fondomain2.jpg);
 }
 main div div.mainImagenes  {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-items: center;
+    justify-content: space-around;
 
     text-align: center;
 }
@@ -92,8 +135,8 @@ main div img.mainImg {
 
 }
 main div div img.mainImg{
-    width: 400px;
-    height: 400px;
+    width: 800px;
+    height: 800px;
     object-fit: cover;
     filter: brightness(75%);
 }
@@ -101,6 +144,9 @@ main div div img.mainImg{
 img.mainImg:hover{
     filter: brightness(100%);
 }
+
+
+/* Footer */
 
 .footer {
     height: 200px;
@@ -129,7 +175,7 @@ footer div h2.footerTitle {
 footer div.footerLogo {
     width: 140px;
     height: 140px;
-    margin: 5px 5px;
+    margin: 10px 20px;
     display: inline-block;
 }
 .footerLogo1 {
@@ -149,31 +195,36 @@ footer div.footerLocation {
     display: inline-block ;
 }
 iframe {
-    margin: 5px 5px;
+    margin: 5px -80%;
     width: 300px;
     height: 150px;
 }
 
 .borderContact {
-    margin: 10px 10px;
+    background-color: black;
+    min-height: calc(100vh - 400px );
     padding: 10px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: left;
     align-items: center;
     
 }
 
+
 form fieldset.form {
-    background: white;
+    color: white;
+    background: rgb(0, 0, 0);
     border: 0px ;
     padding: 0px;
+    font-size: xx-large;
+
 }
 
 img.imgContact {
-    width: 400px;
+    width: 1200px;
     height: auto;
 }
 
@@ -189,8 +240,8 @@ section div.galeria {
 section div img.mainImg {
     border: 1px solid rgb(0, 0, 0);
     padding: 2px;
-    width: 400px;
-    height: 400px;
+    width: 600px;
+    height: 600px;
     object-fit: cover;
     transition: 1s;
 
@@ -212,6 +263,10 @@ h3 {
     font-size: 25px;
 }
 
+.containerProv {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /* Responsive */
 
@@ -260,12 +315,17 @@ main div h2.mainTitle {
 
 }
 
+
+main div div img.mainImg{
+    width: 500px;
+    height: 500px;
+}
 main div div.mainImagenes  {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    background-image: url(../Img/Fondomain.jpg);
+    background-image: url(../Img/Fondomain3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -310,11 +370,46 @@ footer div.footerLocation {
 }
 
 
-
-
 .imgContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
 }
+
+
+/* Page Contacto */
+
+.borderContact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Page Somos */
+
+.somos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.somosContainer1 {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+.somosTitulo {
+    color: white;
+    font-size: 40px;
+    margin: 60PX 15PX;
+}
+
+.somosDesc {
+    color: white;
+    font-size: 20px;
+
