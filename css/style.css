@@ -28,9 +28,10 @@ body {
     margin-bottom: -3px;
 }
 nav div a img.logo {
-    width: 600px;
+    width: 500px;
     height: auto;
     padding: 8px;
+    margin: 20px 20px;
 }
 
 nav div.barranav {
@@ -57,7 +58,7 @@ nav div.barranav ul {
 
 nav div.barranav ul li {
     font-family: 'M PLUS 2', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     display: inline-block;
     margin-top: 20px;
     padding: 10PX;
@@ -97,11 +98,14 @@ nav div.barranav ul li:hover {
     color: white;
     font-size: 60px;
     margin: 80PX 15PX;
+    font-weight: bold ;
+    font-family: 'Courier New', Courier, monospace ;
 }
 
 .somosDesc {
     color: white;
     font-size: 30px;
+    font-family: 'Courier New', Courier, monospace ;
 }
 
 .somosImg {
@@ -124,7 +128,6 @@ main div div.mainImagenes  {
 main div h2.mainTitle {
     font-family: 'M PLUS 2', sans-serif;
     padding: 5px;
-    background: rgb(146, 146, 146);
     text-align: center;
 
 }
@@ -213,19 +216,34 @@ iframe {
     
 }
 
+.legend {
+    font-family: 'Courier New', Courier, monospace ;
+}
 
 form fieldset.form {
     color: white;
     background: rgb(0, 0, 0);
     border: 0px ;
     padding: 0px;
-    font-size: xx-large;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace ;
 
 }
 
+.ref {
+    font-family: 'Courier New', Courier, monospace ;
+}
+.ref1 {
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+#option {
+    font-family: 'Courier New', Courier, monospace ;
+}
+
 img.imgContact {
-    width: 1200px;
-    height: auto;
+    height:  calc(100vh - 400px );
+    width: auto;
 }
 
 section div.galeria {
@@ -274,6 +292,10 @@ h3 {
 
 /* Header */
 
+.wspLogo1 {
+    display: none;
+}
+
 .boxLogo {
         display: flex;
         align-items: center;
@@ -292,13 +314,15 @@ display: flex;
 text-align: center;
 justify-content: center;
 height: 180px;
+
 }
 
 nav div.barranav ul li {
     font-family: 'M PLUS 2', sans-serif;
     display: inline-block;
     text-align: center;
-    margin-top: 100px;
+    margin-top:60px;
+    margin-bottom: 20px;
     padding: 10PX;
     text-decoration: none;
     color: black;
@@ -309,7 +333,6 @@ nav div.barranav ul li {
 main div h2.mainTitle {
     font-family: 'M PLUS 2', sans-serif;
     padding: 5px;
-    background: rgb(146, 146, 146);
     font-size: 80%;
 
 
@@ -331,12 +354,30 @@ main div div.mainImagenes  {
     text-align: center;
 }
 
+/* Contacto */
+
+.borderContact {
+    display: flex;
+    flex-direction: column;
+}
+.imgContact{
+    width: 500px;
+}
+
+form fieldset.form {
+    color: white;
+    background: rgb(0, 0, 0);
+    border: 0px ;
+    padding: 0px;
+    font-size: x-small;
+}
 /* Footer */
 
-.footer {
+footer {
     position: relative;
     width: 100%;
 }
+
 
 footer div.footerLogo {
     width: 150px;
@@ -406,10 +447,13 @@ footer div.footerLocation {
 .somosTitulo {
     color: white;
     font-size: 40px;
+    font-weight: bold ;
+    font-family: 'Courier New', Courier, monospace ;
     margin: 60PX 15PX;
 }
 
 .somosDesc {
     color: white;
     font-size: 20px;
-
+    font-family: 'Courier New', Courier, monospace ;
+}
